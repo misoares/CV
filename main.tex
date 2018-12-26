@@ -1,0 +1,139 @@
+\documentclass[10pt,a4paper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{ragged2e}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{LightBlue}{HTML}{68d2df}
+\definecolor{DarkBlue}{HTML}{00005B}
+\definecolor{BlueGrey}{HTML}{778BA5}
+\colorlet{heading}{BlueGrey}
+\colorlet{accent}{BlueGrey}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Miguel Soares}
+\tagline{Software Engineer \& DevOps Enthusiast}
+\photo{2.5cm}{foto}
+\personalinfo{%
+  \email{mssoares5@gmail.com}
+  \phone{+41 76 280 02 23}
+  \location{Kloten, Zurich}\\
+  \linkedin{linkedin.com/in/misoares}
+  \github{github.com/misoares} 
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Software engineer / Team leader}{Satcom International AG}{2017 -- OnGoing}{Zurich, Switzerland}
+\begin{itemize}
+\justifying
+\item Architecture and development of a smart ERP with IoT integration which included NFC, RFID and tracking devices. In this project I have worked mainly in designing the architecture, backend development, deployment using Kubernetes and optimizing of the working environment using automation and CI with Jenkins. This project also included an iOS and Android app which I was not part of development.
+\item The position of team leader of our team of 5 people(working remote), was shared between me and another engineer for the first half of my time at the company, where we shared the role of Scrum master and ensured that the sprint were executed.
+  Tech stack: Spring boot, Angular 4+, PostgreSQL, ElasticSearch and Vertx.io
+\item Development and maintenance of a delay management system for public
+  transportation of a major pharma company. Tech stack: Meteor, MongoDB,
+  ExpressJS and Vertx.io (Java).  
+\end{itemize}
+
+\divider
+
+\cvevent{Software engineer}{Wiseware Solutions}{2016-2017}{Aveiro, Portugal}
+\begin{itemize}
+\justifying
+\item Tech stack: PostgreSQL, Angular 2+, Java, Vertx.io, Ionic2, Jenkins
+  
+Development of a IoT platform for indoor navigation, car parking and store advertisement using BLE beacons, targeted for shopping malls.
+In this project I've worked mainly of the REST backend written in Java with Vertx, a mobile App for end users using Ionic2 and a backoffice using Angular2+.  
+\end{itemize}
+
+\divider
+
+\cvevent{Co-founder}{Festock}{2014 -- 2017}{Aveiro, Portugal}
+\begin{itemize}
+\justifying
+\item Keywords: Software modeling, Java, Backend, REST, database design, project management
+
+  Architeture, backend deveolper, server maintenance and deployment of a platform for flm festivals, professionals and enthusiasts where it is possible to manage and share flm related work. 
+\end{itemize}
+
+\divider
+
+\cvevent{Researcher}{Aveiro University}{06/2016 -- 11/2016}{Aveiro, Portugal}
+\begin{itemize}
+\justifying
+\item Keywords: R, Fortran, Software modeling, Data extraction and processing 
+
+  Development in R of a demographic prediction model based on a legacy model 
+written in Fortran. Development of an GUI for the model in C#.
+\end{itemize}
+
+
+\newpage 
+
+\cvevent{Researcher}{Aveiro University}{02/2016 -- 05/2016}{Aveiro, Portugal}
+\begin{itemize}
+\justifying
+\item Keywords: R, Fortran, Software modeling, Data extraction and processing 
+
+  Development in R of a demographic prediction model based on a legacy model 
+written in Fortran. Development of an GUI for the model in C#.
+\end{itemize}
+
+\cvsection[page2sidebar]{Education}
+ 
+\cvevent{MSc in Computer Engineering and Telematics}{Aveiro University}{2013 -- 2015}{Aveiro, Portugal}
+\begin{itemize}
+\justifying
+\item Emphasis on: Software Engineering, Project management, Mobile computing, Distributed Systems, Software Security, Information retrieval, Embedded Systems, Computer Security, Concurrency
+\item MSc Thesis: Framework for Trafc Data Analysis and Drivers’ Behavior
+Consisted in gathering data from heterogeneous sources about diﬀerent factors
+that inﬂuence the driving behavior and store it along with trafc data fromreal
+driver in the data warehouse created. Allowing that way to analyze traffc data
+and drivers’ behavior. I was also performed a study about NoSQL paradigms and database implementations
+\end{itemize}
+\divider
+
+\cvevent{BSc in Computer Engineering and Telematics}{Aveiro University}{2008 -- 2013}{Aveiro, Portugal}
+\begin{itemize}
+\justifying
+\item Emphasis on: Mathematics, Programming, Network concepts and architecture, Computer architecture, Operating Systems, Algorithm Complexity, Databases, System analyses and modeling
+\end{itemize}
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
+ 

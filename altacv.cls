@@ -146,6 +146,9 @@
 \newcommand{\github}[1]{\printinfo{\githubsymbol}{#1}}
 \newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{#1}}
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
+\newcommand{\birthday}[1]{\printinfo{\faBirthdayCake}{#1}}
+\newcommand{\nationality}[1]{\printinfo{\faFlag}{#1}}
+
 
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
 
